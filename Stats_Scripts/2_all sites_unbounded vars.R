@@ -7,7 +7,7 @@
 library(dplyr);library(tidyr);library(nlme);library(emmeans);library(performance)
 library(ggplot2)
 
-stage1 <- read_xlsx("outputs/emmeans_within sites_unbounded_no TE1.xlsx") |> 
+stage1 <- read_xlsx("Data/emmeans_within sites_unbounded_no TE1.xlsx") |> 
   mutate(time_fct = as.factor(time_fct)) |> 
   rename(carcass_loc = plot, 
          sampling_loc = splitplot) |> 
