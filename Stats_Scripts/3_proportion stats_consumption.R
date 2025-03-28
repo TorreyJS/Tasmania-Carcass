@@ -13,7 +13,7 @@ library(ggplot2); library(car);library(ggsci); library(nlme)
 # columns, makes day a factor, changes 100% consumed values to 99.9%, creates a 
 # consumed proportion column (decimal instead of percent), and adds a time column (integer)
 
-mydata <- read.xlsx("data/2023_carcass persistence pct.xlsx") |> janitor::clean_names() |> 
+mydata <- read.xlsx("Data/2023_carcass persistence pct.xlsx") |> janitor::clean_names() |> 
   mutate(block = as.character(rep),
          plot = paste(site, trt, rep, sep = "_"),
          site_rep = paste(site, block, sep = "_"),
