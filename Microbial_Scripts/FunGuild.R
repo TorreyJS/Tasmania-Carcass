@@ -14,7 +14,7 @@ library(lme4);library(car);library(emmeans);library(vegan)
 # relative abundance data
 
 #############################
-location <- "C:/Users/torreys/OneDrive - University of Idaho/Stephenson PhD/Tassie 2023/2023_DNA_Sequences/ITS/ITS_ps_soilonly.rds"
+location <- "Data/ITS_ps_soilonly.rds"
 summerps <- readRDS(location) # unrarefied
 
 # Check the updated sample data
@@ -409,7 +409,7 @@ emmeans(mod, pairwise ~ Treatment) # E***, S***
 
 ##### Seasonal analysis #######
 #############################
-location <- "data/both seasons_ITS_phyloseq_NOTrarefied.rds" 
+location <- "Data/both seasons_ITS_phyloseq_NOTrarefied.rds" 
 seasonps <- readRDS(location) # not rarefied
 
 # Check the updated sample data
