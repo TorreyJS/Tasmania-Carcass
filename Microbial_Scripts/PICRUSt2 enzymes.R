@@ -9,7 +9,7 @@ library(ggplot2)
 
 
 # bring in KEGG data: 
-kegg <- read_tsv("data/picrust/output/KO_metagenome_out/pred_metagenome_unstrat.tsv.gz")
+kegg <- read_tsv("Data/pred_metagenome_unstrat.tsv.gz")
 colnames(kegg)[1] <-"keggfxn"
 
 pwys <- kegg[,1]
@@ -229,7 +229,7 @@ emmeans(lysmod, pairwise ~ trt)
 ################################################################################
 ##### C, N, and P enzymes:
 # bring in the pathways of interest:
-interest <- read.xlsx("extra/pathways of interest.xlsx", sheet = 2)
+interest <- read.xlsx("Data/pathways of interest.xlsx", sheet = 2)
 
 ################## acid phosphatases: 
 aphos <- interest[8:11,4]
