@@ -14,7 +14,7 @@ library(biomformat);library(phyloseq);library(ggplot2);library(dplyr)
 library(vegan);library(car);library(lme4);library(reshape);library(emmeans)
 library(cowplot)
 
-Bac_otus2 <- "data/picrust/summer_16s_filtered_OTU_table.biom"
+Bac_otus2 <- "Data/summer_16s_filtered_OTU_table.biom"
 
 x1 <- read_biom(Bac_otus2)
 x2 <- as.matrix(biom_data(x1))
@@ -22,7 +22,7 @@ x2 <- as.matrix(biom_data(x1))
 head(x2)
 colSums(x2) # all just about 10k
 
-copies2 <- nsti_data <- read.table("data/picrust/output/summer_marker_predicted_and_nsti.tsv.gz", header = TRUE, sep = "\t")
+copies2 <- nsti_data <- read.table("Data/summer_marker_predicted_and_nsti.tsv.gz", header = TRUE, sep = "\t")
 x3.1 <- x2[rownames(x2) %in% copies2$sequence,]
 colSums(x3.1)
 
@@ -49,7 +49,7 @@ table2.1 <- cbind(rownames(table.1), data.frame(table.1, row.names=NULL,check.na
 colnames(table2.1)[1] <- c("id")
 table2.1 <- table2.1[order(table2.1$id),]
 
-meta <- read.csv("data/picrust/summer_metadata.csv")
+meta <- read.csv("Data/summer_metadata.csv")
 colnames(meta)[1] <- "id"
 meta <- meta[order(meta$id),]
 
@@ -249,7 +249,7 @@ pairs(emmeans_results, adjust = "fdr")
 
 ### FIRST, bring in the 2022 data:
 
-Bac_otus <- "data/2022_picrust/winter_biom_for_PICRUST.biom"
+Bac_otus <- "Data/winter_biom_for_PICRUST.biom"
 
 x1 <- read_biom(Bac_otus)
 x2 <- as.matrix(biom_data(x1))
@@ -257,7 +257,7 @@ x2 <- as.matrix(biom_data(x1))
 head(x2)
 colSums(x2) # most 10950
 
-copies2 <- nsti_data <- read.table("data/2022_picrust/output/winter_marker_predicted_and_nsti.tsv.gz", header = TRUE, sep = "\t")
+copies2 <- nsti_data <- read.table("Data/winter_marker_predicted_and_nsti.tsv.gz", header = TRUE, sep = "\t")
 x3.1 <- x2[rownames(x2) %in% copies2$sequence,]
 colSums(x3.1)
 
@@ -285,7 +285,7 @@ colnames(table2.1)[1] <- c("id")
 table2.1 <- table2.1[order(as.numeric(table2.1$id)),]
 table2.1$id <- as.numeric(table2.1$id)
 
-meta <- read.csv("data/2022_picrust/16S_devils_metadata_winter.csv")
+meta <- read.csv("Data/16S_devils_metadata_winter.csv")
 colnames(meta)[1] <- "id"
 meta <- meta[order(as.numeric(meta$id)),]
 
