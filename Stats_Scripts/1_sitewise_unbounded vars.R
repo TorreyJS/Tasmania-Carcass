@@ -1,7 +1,7 @@
 ################################################################################
 # Summer carcass data analysis stage 1: UNBOUNDED variables at EACH site 
 # input file: data with outliers checked (none removed), negative PO4 values set to 0
-# input file name: 2023Carcass_NoOuts.csv
+# input file name: SummerCarcassData.xlsx
 # output file: all_emmeans and all_anova
 # all_emmeans used for 4_stage 2 stats comparing across sites!
 # this code corresponds to approximately lines 422-429 of MS
@@ -10,7 +10,7 @@ library(readxl);library(nlme);library(emmeans);library(dplyr);library(tidyr);
 library(openxlsx);library(DataExplorer) 
 
 
-mydata <- read_xlsx("data/2023Carcass_NoOuts_062624.xlsx") |> 
+mydata <- read_xlsx("Data/SummerCarcassData.xlsx") |> 
   rename(plot = "trt1", splitplot = "trt2", shandiv_16S = "16s_shandiv") |> 
   mutate(block = as.character(block),
          time_fct = as.character(time),
