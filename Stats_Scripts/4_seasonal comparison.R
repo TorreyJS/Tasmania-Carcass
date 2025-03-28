@@ -5,7 +5,7 @@
 library(readxl);library(nlme);library(emmeans);library(dplyr);library(tidyr); 
 library(openxlsx);library(car); library(lme4);library(glmmTMB)
 
-seasonal <- read_xlsx("data/timefinal_bothyears.xlsx")|> 
+seasonal <- read_xlsx("Data/timefinal_bothyears.xlsx")|> 
   rename(plot = "trt1", splitplot = "trt2") |> 
   mutate(block = as.character(block),
          time_fct = as.character(time),
