@@ -14,25 +14,25 @@ Names and units for soil chemistry data (SummerCarcassData.xlsx) are as follows:
 
 Most\* abbreviations/units used in this file are consistent in other data files, so only this file has column-specific detail
 
-A: year of sampling. 2023 = "summer", 2022 = "winter"
-B: sample number.
-C: trueID. Internal lab shorthand for keeping track of samples
-D: site. G = Low Devils, A = Medium Devils, T = High Devils, B = No Devils
-E: block. experimental block/replicate
-F: trt1. "Carcass Access" - whether carcass was in an exclusion cage (E) or staked with no cage (S)
-G: trt2. "Location" - whether the soil sample was taken from underneath the carcass treatment (T), or the paired control (C)
-H: time. Days after carcass placement that the sample was taken. 0 = day of placement, 1 = +5 days, 2 = +10 days, 3 = +15 days, 4 = +30 days.
-I: dark. Indicates whether visible color was present in the soil extract; relevant for soil PO4 determination.
-J: day_remove. Day of experiment on which all soft tissue had been removed from the carcass.
-K: pct.consumed. The percent of the carcass which was consumed at each sampling point/location. Data are incomplete in this file; this is rectified by the presence of "day removed both yrs.xlsx", which contains complete data.
-L: Wm. Soil moisture (%), expressed as a decimal.
-M-Q: Ammonium, Nitrate, Phosphate, Dissolved Organic Carbon, Total Dissolved Nitrogen in soil samples, expressed as micrograms per gram of dry soil.
-R: EC. Soil electrical conductivity, expressed as microsiemens per cm.
-S: pH. Soil pH, expressed as pH units.
-T-AA: Relative abundance of various bacterial phyla. "Other" is the sum of all rare phyla. See published methods for details.
-AB: rK_ratio. The ratio of "r-selected" to "K-selected" phyla.
-AC: 16S_shandiv. Shannon Diversity (H) of the soil bacterial community.
-AD-AL: Relative abundance of various fungal phyla. "Other" is the sum of all rare phyla. See published methods for details.
-AM: ITS_shandiv. Shannon Diversity (H) of the soil fungal community.
+A: year of sampling. 2023 = "summer", 2022 = "winter"  
+B: sample number.  
+C: trueID. Internal lab shorthand for keeping track of samples  
+D: site. G = Low Devils, A = Medium Devils, T = High Devils, B = No Devils  
+E: block. experimental block/replicate  
+F: trt1. "Carcass Access" - whether carcass was in an exclusion cage (E) or staked with no cage (S)  
+G: trt2. "Location" - whether the soil sample was taken from underneath the carcass treatment (T), or the paired control (C)  
+H: time. Days after carcass placement that the sample was taken. 0 = day of placement, 1 = +5 days, 2 = +10 days, 3 = +15 days, 4 = +30 days.  
+I: dark. Indicates whether visible color was present in the soil extract; relevant for soil PO4 determination.  
+J: day_remove. Day of experiment on which all soft tissue had been removed from the carcass.  
+K: pct.consumed. The percent of the carcass which was consumed at each sampling point/location. Data are incomplete in this file; this is rectified by the presence of "day removed both yrs.xlsx", which contains complete data.  
+L: Wm. Soil moisture (%), expressed as a decimal.  
+M-Q: Ammonium, Nitrate, Phosphate, Dissolved Organic Carbon, Total Dissolved Nitrogen in soil samples, expressed as micrograms per gram of dry soil.  
+R: EC. Soil electrical conductivity, expressed as microsiemens per cm.  
+S: pH. Soil pH, expressed as pH units.  
+T-AA: Relative abundance of various bacterial phyla. "Other" is the sum of all rare phyla. See published methods for details.  
+AB: rK_ratio. The ratio of "r-selected" to "K-selected" phyla.  
+AC: 16S_shandiv. Shannon Diversity (H) of the soil bacterial community.  
+AD-AL: Relative abundance of various fungal phyla. "Other" is the sum of all rare phyla. See published methods for details.  
+AM: ITS_shandiv. Shannon Diversity (H) of the soil fungal community.  
 
 \* "time" column varies from summer to winter. In winter, only 2 sampling periods occurred so the final sampling point, equivalent to '4' in the summer data is labeled as '1'. Only relevant for "timefinal_bothyears.xlsx" file.
